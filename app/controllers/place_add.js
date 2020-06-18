@@ -252,7 +252,7 @@ angular.module('App').controller('AddPlaceController',
         self.sendGcmNotification = function () {
             console.log("place_id : " + self.resp_submit.data.place_id);
             services.getPlace(self.resp_submit.data.place_id).then(function (resp) {
-                data.title = 'The City';
+                data.title = 'Lost In Lombok';
                 data.type = 'PLACE';
                 data.content = (isNew) ? 'New Place Added : ' + self.place.name : 'New Update Place : ' + self.place.name;
                 data.place = resp.data;

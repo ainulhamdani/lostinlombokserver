@@ -127,7 +127,7 @@ angular.module('App').controller('AddNewsController',
         var data = {};
         self.sendGcmNotification = function () {
             services.getNewsInfo(self.resp_submit.data.id).then(function (resp) {
-                data.title = 'The City';
+                data.title = 'Lost In Lombok';
                 data.type = 'NEWS_INFO';
                 data.content = 'News Info : ' + resp.data.title;
                 data.news = resp.data;
